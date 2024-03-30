@@ -3,6 +3,7 @@
  * @author 7teen
  */
 const { Client, Intents, MessageEmbed } = require("discord.js");
+const keep_alive = require('./keep_alive.js')
 const nuker = new Client({ intents: Object.values(Intents.FLAGS).reduce((a, b) => a + b) });
 const { red, greenBright, cyan, yellow } = require("chalk");
 const { token, prefix, userID, disableEveryone } = require("../config/config.json")
